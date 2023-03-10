@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Recents"
+        android:id="@+id/recent_menu"
+        android:icon="@drawable/ic_recent"
+        android:checked="true"/>
+
+    <item android:title="Contacts"
+        android:id="@+id/contact_menu"
+        android:icon="@drawable/ic_account"
+        android:checked="true"/>
+
+    <item android:title="Settings"
+        android:id="@+id/settings_menu"
+        android:icon="@drawable/ic_settings"
+        android:checked="true"/>
+
+</menu>

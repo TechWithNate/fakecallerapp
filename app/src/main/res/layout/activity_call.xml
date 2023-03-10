@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".Call">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mum Calling..."
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/contact_calling"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+233 54 665 1113"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contact_calling"
+        android:layout_marginTop="10dp"
+        android:id="@+id/contact_number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:textColor="@color/white"
+        android:layout_below="@+id/contact_number"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+   <ImageView
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:src="@drawable/accept_btn"
+       android:layout_above="@+id/reply"
+       android:layout_marginBottom="60dp"
+       android:layout_marginStart="80dp"
+       android:id="@+id/accept_call"
+       />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/decline_btn"
+        android:layout_above="@+id/reply"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80dp"
+        android:id="@+id/decline_call"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hang up and reply"
+        android:id="@+id/reply"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/rectangle"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rectangle"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+</RelativeLayout>

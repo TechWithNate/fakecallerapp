@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_purple"
+    tools:context=".CallProgress">
+
+    <ImageView
+        android:id="@+id/account_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_account_circle" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Nathan"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="055 050 8433"
+        android:textColor="#DADBE4"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="00:00"
+        android:textColor="#A4A5A6"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/end_call"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/decline_btn" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layer_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp">
+
+        <ImageView
+            android:id="@+id/voice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_voice" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mute"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_below="@+id/voice"
+            android:id="@+id/voice_txt"
+            android:layout_centerHorizontal="true"/>
+
+
+        <ImageView
+            android:id="@+id/voice_record"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_voice_record" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_below="@+id/voice_record"
+            android:id="@+id/voice_record_txt"
+            android:layout_marginStart="15dp"/>
+
+        <ImageView
+            android:id="@+id/contacts"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_account" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_below="@+id/contacts"
+            android:id="@+id/contact_txt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layer_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/end_call"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp">
+
+        <ImageView
+            android:id="@+id/hold"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_pause" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hold"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_below="@+id/hold"
+            android:id="@+id/hold_txt"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/record"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_below="@+id/record"
+            android:id="@+id/record_txt"
+            android:layout_marginStart="20dp"/>
+
+        <ImageView
+            android:id="@+id/speaker"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speaker"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_below="@+id/speaker"
+            android:id="@+id/speaker_txt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/dark_purple"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recents"
+        android:id="@+id/label"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/search_bar"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:hint="Search..."
+        android:lines="1"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:textColorHint="@color/white"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/text_curve"
+        android:layout_below="@+id/label"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/recent_recyclerView" />
+
+</RelativeLayout>
